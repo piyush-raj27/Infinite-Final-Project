@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#SmartSearch.jsp" PATH="/SmartSearch.jsp"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#SmartSearch.jsp:0" NAME="item"
+   PATH="/SmartSearch.jsp" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="CriteriaImpl::#destinationPage.xhtml"
+    NAME="output" PATH="/destinationPage.xhtml"
+    TARGET="rules:#destinationPage.xhtml" TITLE="CriteriaImpl" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#destinationPage.xhtml"
+  PATH="/destinationPage.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

@@ -1,0 +1,326 @@
+/* Basic CSS reset */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+	filter: drop-shadow(2px 4px 6px black);
+	  background-image: url("HospitalTheme1.jpg"); 
+ font-family: Arial, sans-serif;
+ line-height: 1.6;
+ color: #333;
+}
+
+/* Header styling */
+header {
+	
+ background-color: #4CAF50;
+ color: white;
+ text-align: center;
+ padding: 10px;
+}
+
+.para {
+	border-radius: 25px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   background-color: beige;
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+    cursor: pointer;
+    outline: none;
+    text-align:center;
+}
+
+/* Style the dropdown options */
+.para option {
+    padding: 8px;
+}
+
+
+
+/* Style the dropdown arrow */
+.para::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Change the background color on hover */
+.para:hover {
+    background-color: #f9f9f9;
+}
+
+/* Change the background color on focus */
+.para:focus {
+    background-color: #f9f9f9;
+    border: 1px solid #3498db;
+}
+
+/* Style the dropdown options on hover */
+.para option:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Style the dropdown options on selection */
+.para option:checked {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Hide the default arrow on Firefox */
+/* .para::-moz-focus-inner {
+    border: 0;
+} */
+
+.css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.css label {
+    font-size: 16px;
+    color: #333;
+}
+
+.css input[type="text"] {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.css h\\:message {
+    color: red;
+}
+
+
+.radio {
+	filter: drop-shadow(2px 4px 6px black);
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Style the radio button label */
+
+.radio label {
+    cursor: pointer;
+    padding: 2px;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style the radio brgb(0, 0, 0)0, 0)nput */
+.radio input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Style the radio button input when checked */
+.radio input[type="radio"]:checked {
+    background-color: black;
+}
+
+/* Style the radio button input on hover */
+.radio input[type="radio"]:hover {
+    border-color: white;
+}
+
+/* Style the radio button label on hover */
+.radio label:hover {
+    color: white;
+}
+
+.button {
+	border-radius: 25px;
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 11px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  opacity: 1.0;
+}
+
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+/* DataTable styling */
+.funkyDataTable {
+	
+	opacity: 1.0;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.funkyDataTable th, .funkyDataTable td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+}
+
+.funkyDataTable th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.funkyDataTable th a {
+	text-align:center;
+    text-decoration: none;
+    color: #333;
+}
+
+.funkyDataTable th:hover {
+    background-color: #ddd;
+}
+
+.funkyDataTable td {
+    background-color: aliceblue;
+}
+
+.funkyDataTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* .funkyDataTable tr:hover {
+    background-color: #f5f5f5;
+} */
+
+.commandLink {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.commandLink:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+/* Style for the commandButton */
+.commandButtonStyle {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it an inline block */
+    font-size: 16px; /* Set font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Hover effect */
+.commandButtonStyle {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.commandButtonStyle:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+/* Pagination buttons styling */
+.funkyPagination {
+ background-color: #4CAF50;
+ color: white;
+ padding: 5px 10px;
+ border: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ transition-duration: 0.4s;
+}
+
+.funkyPagination:hover {
+ background-color: #45a049;
+}
+
+.funkyPagination:disabled {
+ background-color: #cccccc;
+ cursor: not-allowed;
+}
+
+/* Message label styling */
+.messageLabel {
+ color: red;
+}
+
+
+.loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid blue;
+            border-right: 16px solid green;
+            border-bottom: 16px solid red;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -60px; /* Negative half of the height */
+            margin-left: -60px; /* Negative half of the width */
+            z-index: 9999; /* Make sure it's on top */
+        }
+
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee /WEB-INF/schema/web-facesconfig_2_2.xsd"
+	version="2.2">
+
+	<!-- This file must be present with our jar, even if it is empty. Otherwise, 
+		our Java annotations won't get scanned! -->
+
+
+<navigation-rule>
+    <from-view-id>/SmartSearch.jsp</from-view-id>
+    <navigation-case>
+        <from-outcome>CriteriaImpl</from-outcome>
+        <to-view-id>/destinationPage.xhtml</to-view-id>
+    </navigation-case>
+    <!-- Add more navigation cases as needed -->
+</navigation-rule>
+	<managed-bean>
+		<managed-bean-name>pBeanImpl</managed-bean-name>
+		<managed-bean-class>com.java.jsp.PatientDaoImpl</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>daoImpl</managed-bean-name>
+		<managed-bean-class>com.java.jsp.PatientDaoImpl</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>patient</managed-bean-name>
+		<managed-bean-class>com.java.jsp.Patient</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+	<managed-bean-name>paginationDao</managed-bean-name>
+   <managed-bean-class>com.java.jsp.JsfPaginationBean</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+	<!-- <managed-bean-name>patientController</managed-bean-name> <managed-bean-class>com.java.jsp.PatientController</managed-bean-class> 
+		<managed-bean-scope>request</managed-bean-scope> <managed-property> <property-name>patient</property-name> 
+		<property-class>com.java.jsp.Patient</property-class> <value>#{patient}</value> 
+		</managed-property> <managed-property> <property-name>daoImpl</property-name> 
+		<property-class>com.java.jsp.PatientDaoImpl</property-class> <value>#{daoImpl}</value> 
+		</managed-property> -->
+<managed-bean>
+    <managed-bean-name>patientController</managed-bean-name>
+    <managed-bean-class>com.java.jsp.PatientController</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+    <managed-property>
+        <property-name>daoImpl</property-name>
+        <property-class>com.java.jsp.PatientDaoImpl</property-class>
+        <value>#{daoImpl}</value>
+    </managed-property>
+</managed-bean>
+
+</faces-config>
